@@ -1,0 +1,359 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #22262A;
+}
+
+.wrap {
+    min-height: 100%;
+    border: 1px solid black;
+}
+
+.header_container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_text {
+    font-size: 28px;
+    font-style: bold;
+}
+
+.nav_menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_menu>li {
+    padding: 20px;
+}
+
+.nav_menu>li>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #22262A;
+}
+
+.page1_container {
+    border: 1px solid green;
+    background-image: url(/assets/page1-1024.png);
+}
+
+.page1_text_first,
+.page1_text,
+.page1_button {
+    margin-left: 70%;
+}
+
+.page1_text_first {
+    margin-top: 30%;
+}
+
+.page1_container>h1 {
+    font-size: 60px;
+}
+
+.page1_button {
+    text-align: center;
+    margin-left: 70%;
+    margin-bottom: 5%;
+}
+
+button {
+    color: #ffffff;
+    background-color: #22262A;
+}
+
+.page3_container,
+.page4_container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.page3_menu,
+.page4_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.page3_item_pic,
+.page4_item_pic {
+    width: 15vw;
+    height: 40vh;
+    margin-left: 5%;
+}
+
+
+
+.page5_container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    border: 1px solid pink;
+}
+
+.page6_container {
+    border: 1px solid green;
+    background: url(/assets/page-6.png) no-repeat;
+
+}
+
+.page6_text_first,
+.page6_text,
+.button {
+    margin-left: 10%;
+}
+
+.page6_text_first {
+    margin-top: 20%;
+}
+
+
+
+@media (min-width: 900px) and (max-width: 1500px) {
+    .container {
+        max-width: 921px;
+    }
+
+    .page2_container {
+        max-width: 1024px;
+        height: 40vh;
+        margin: 0 auto;
+        border: 1px solid red;
+        display: grid;
+        gap: 2%;
+    }
+
+    .page2_picture1 {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        background-color: red;
+    }
+
+    .page2_picture2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: orange;
+    }
+
+    .page2_picture3 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        background-color: yellow;
+    }
+
+    .page2_picture4 {
+        grid-row: 1/3;
+        grid-column: 3/4;
+        background-color: green;
+    }
+
+    .button {
+        background-color: black;
+        font-size: 18px;
+        width: 15%;
+        margin-bottom: 5%;
+    }
+
+    .button>a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .page3_title,
+    .page4_title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .page3_text,
+    .page4_text {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .page3_item_title,
+    .page4_item_title {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .page3_item_name,
+    .page4_item_name {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .page3_item_old_price,
+    .page4_item_old_price {
+        text-decoration: line-through;
+    }
+
+    .page3_item_new_price,
+    .page4_item_new_price {
+        color: red;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 899px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .page1_container>h1 {
+        font-size: 40px;
+    }
+
+    .logo_text {
+        font-size: 24px;
+    }
+
+    .nav_menu>li>a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .page2_container {
+        max-width: 920px;
+        height: 40vh;
+        margin: 0 auto;
+        border: 1px solid red;
+        display: grid;
+    }
+
+    .page2_picture1 {
+        background-color: red;
+    }
+
+    .page2_picture2 {
+        background-color: orange;
+    }
+
+    .page2_picture3 {
+        background-color: yellow;
+    }
+
+    .page2_picture4 {
+        background-color: green;
+    }
+
+    .button {
+        background-color: blue;
+        font-size: 14px;
+        width: 15%;
+        margin-bottom: 5%;
+    }
+
+    .button>a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .page3_title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .page3_text,
+    .page4_text {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .page3_item_title,
+    .page4_item_title {
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .page3_item_name,
+    .page4_item_name {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .page3_item_old_price,
+    .page4_item_old_price {
+        text-decoration: line-through;
+    }
+
+    .page3_item_new_price,
+    .page4_item_new_price {
+        color: red;
+    }
+
+
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+    .container {
+        max-width: none;
+    }
+
+    .page1_container>h1 {
+        font-size: 20px;
+    }
+
+    .logo_text {
+        font-size: 18px;
+    }
+
+    .nav_container {
+        display: none;
+    }
+
+    .page2_container {
+        display: none;
+    }
+
+    .button {
+        background-color: yellow;
+        font-size: 10px;
+        width: 15%;
+        margin-bottom: 5%;
+    }
+
+    .button>a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .page3_title {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .page3_text,
+    .page4_text {
+        display: none;
+    }
+
+    .page3_item_title,
+    .page4_item_title {
+        display: none;
+    }
+
+    .page3_item_name,
+    .page4_item_name {
+        display: none;
+    }
+
+    .page3_item_old_price,
+    .page4_item_old_price {
+        text-decoration: line-through;
+    }
+
+    .page3_item_new_price,
+    .page4_item_new_price {
+        color: red;
+    }
+
+}
